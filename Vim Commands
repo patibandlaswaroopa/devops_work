@@ -1,0 +1,63 @@
+vim COMMANDS 
+======
+vim filename
+i---for insert mode 
+:wq ----save and exit from the file
+:x(small x)--- save content of the file and quite
+dd --- delete the line
+number (2)--- number of lines to delete 
+p---to paste 
+yy-- to copy
+shift G -- tail part from the file
+g --- head part from the file
+
+============================
+Basic Operations
+----------------------------
+vim filename - Open a file in Vim.
+i - Enter insert mode to edit text.
+Esc - Exit insert mode and return to normal mode.
+Saving and Exiting
+:w - Save the current file.
+:wq - Save and exit the file.
+:q! - Exit without saving.
+:x - Save and exit (like :wq but more concise).
+ZZ - Save and exit (in normal mode).
+Editing
+dd - Delete the current line.
+2dd - Delete 2 lines (change 2 to any number for more lines).
+x - Delete a single character.
+u - Undo the last change.
+Ctrl + r - Redo the last undone change.
+Copy and Paste
+yy - Copy the current line.
+2yy - Copy 2 lines (change 2 to any number).
+p - Paste below the current line.
+P - Paste above the current line.
+Navigation
+h - Move left.
+l - Move right.
+j - Move down.
+k - Move up.
+0 - Move to the beginning of the current line.
+^ - Move to the first non-blank character of the line.
+$ - Move to the end of the current line.
+gg - Go to the beginning of the file.
+Shift + G - Go to the end of the file.
+:n - Go to line n (e.g., :10 moves to line 10).
+Search
+/pattern - Search for pattern in the file (forward direction).
+?pattern - Search for pattern (backward direction).
+n - Jump to the next occurrence of the search pattern.
+N - Jump to the previous occurrence.
+Visual Mode
+v - Start visual mode (to select text).
+V - Start line-wise visual mode.
+Ctrl + v - Start block visual mode.
+Miscellaneous
+:set number - Display line numbers.
+:set nonumber - Hide line numbers.
+:syntax on - Enable syntax highlighting.
+:syntax off - Disable syntax highlighting.
+:%s/old/new/g - Replace all occurrences of old with new in the file.
+:help command - Open help for a specific command (e.g., :help :wq).
